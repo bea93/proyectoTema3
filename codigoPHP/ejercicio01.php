@@ -7,7 +7,7 @@
         <?php
             /*
                 @author Bea Merino
-                @since 06/10/2020
+                Fecha 06/10/2020
                 Inicializar variables de los distintos tipos de datos básicos(string, int, float, bool) y mostrar los datos por pantalla 
                                 (echo, print, printf, print_r, var_dump).
             */

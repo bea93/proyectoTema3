@@ -5,7 +5,7 @@
         <meta name="author" content="Bea Merino Macía">
         <meta name="application-name" content="Sitio web">
 
-        <title>Bea Merino Macía</title>
+        <title>Ejercicio 01</title>
     </head>
 	
 	<body>
