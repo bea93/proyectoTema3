@@ -6,8 +6,8 @@
         <?php
         /*
           @author: Bea Merino Macía
-         * Fecha: 22/03/2021
-         * Mostrar en tu página index la fecha y hora actual en Oporto formateada en portugués
+         * @since: 22/03/2021
+         * @description: Mostrar en tu página index la fecha y hora actual en Oporto formateada en portugués
          */
            
             date_default_timezone_set("Europe/Lisbon"); //Ajustamos la zona horaria portuguesa

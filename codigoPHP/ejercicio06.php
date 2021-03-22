@@ -1,13 +1,13 @@
 ﻿<html>
     <head>
-        <title>Bea Merino Macía</title>
+        <title>Ejercicio 06</title>
     </head>
     <body>
         <?php
         /*
             @author: Bea Merino Macía
-            Fecha: 22/03/2021
-            Operar con fechas: calcular la fecha y el día de la semana de dentro de 60 días.
+            @since: 22/03/2021
+            @description: Operar con fechas: calcular la fecha y el día de la semana de dentro de 60 días.
         */
             echo "Fecha actual -> ",date("d/m/Y");
             echo '<br>';

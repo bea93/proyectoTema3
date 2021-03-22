@@ -1,13 +1,13 @@
 ﻿<html>
     <head>
-        <title>Bea Merino Macía</title>
+        <title>Ejercicio 10</title>
     </head>
     <body>
         <?php
         /*
             @author: Bea Merino Macía
-            Fecha: 22/03/2021
-            Mostrar el contenido del fichero que se está ejecutando.
+            @since: 22/03/2021
+            @description: Mostrar el contenido del fichero que se está ejecutando.
          */
           highlight_file("ejercicio10.php");
         ?>

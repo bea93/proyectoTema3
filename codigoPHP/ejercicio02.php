@@ -6,8 +6,8 @@
         <?php
         /*
             @author: Bea Merino Macía
-            Fecha 06/10/2020.
-            Inicializar y mostrar una variable heredoc
+            @since: 06/10/2020.
+            @description: Inicializar y mostrar una variable heredoc
         */
         
         $mensaje = <<<EOD

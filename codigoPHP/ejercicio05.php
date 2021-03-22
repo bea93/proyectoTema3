@@ -1,13 +1,13 @@
 <html>
     <head>
-        <title>Bea Merino Macía</title>
+        <title>Ejercicio 05</title>
     </head>
     <body>
         <?php
         /*
           @author: Bea Merino Macía
-          Fecha: 22/03/2021
-          Inicializar y mostrar una variable que tiene una marca de tiempo (timestamp)
+          @since: 22/03/2021
+          @description: Inicializar y mostrar una variable que tiene una marca de tiempo (timestamp)
          */
             $tiempo = new DateTime(); //Creamos un objeto de la clase DateTime
             $sec = $tiempo->getTimeStamp(); //Asignamos a la variable $sec la hora actual en segundos

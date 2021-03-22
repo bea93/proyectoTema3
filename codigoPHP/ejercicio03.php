@@ -6,8 +6,8 @@
         <?php
             /*
                 @author: Bea Merino Macía
-                Fecha: 18/03/2021.
-                Mostrar en tu página index la fecha y hora actual formateada en castellano
+                @since: 18/03/2021.
+                @description:Mostrar en tu página index la fecha y hora actual formateada en castellano
             */
 
                 date_default_timezone_set("Europe/Madrid"); //Ajustamos la zona horaria española
