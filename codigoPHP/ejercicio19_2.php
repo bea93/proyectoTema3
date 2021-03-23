@@ -1,47 +1,35 @@
 ﻿<html>
     <head>
-        <title>Ejercicio 16</title>
+        <title>Ejercicio 19_2</title>
     </head>
     <body>
         <?php
             /*
                 @author: Bea Merino Macía
                 @since: 08/10/2020
-                @description: Recorrer el array anterior utilizando funciones para obtener el mismo resultado.
+                @description: Explica como guardarías en una variable PHP la información sobre los
+                                participantes en tres carreras de atletismo que se celebrarán los días 6-12-
+                                2020, 25-12-2020 y 6-1-2021. De los participantes en cada carrera debemos
+                                ser capaces de almacenar: n.º de dorsal, nombre y apellidos y tiempo al llegar a
+                                la meta. Los dos primeros datos se guardarán al inscribirse en la carrera y el
+                                tiempo al llegar a meta cuando el atleta cruce la línea de meta
             */
         
-             echo "<h2>El sueldo semanal es:</h2>";
+             echo "<h2>Datos de la carrera:</h2>";
         
             //Creamos un array, asignamos como claves los días de la semana y valor el salario
             $aCarrera1 = [
                 "Fecha" => "23/03/2021", 
                 "Dorsal" => 5, 
-                "Tiempo" => 100
+                "Tiempo en segundos" => 100
                 ];
             
-            //Variable acumulador
-            $acumulador = 0;
             
-            reset($salarioDiario);
-            
-            //Se recorre el array con el while hasta que la clave sea null
-            while(!is_null(key($salarioDiario))){
-                //Mostramos la clave y valor actual en cada vuelta
-                echo key($salarioDiario) . " = " . current($salarioDiario) . "€<br>";
-                //Acumulamos el salario para mostrar el total
-                $acumulador += current($salarioDiario);
-                //Avanzamos una posición en el bucle
-                next($salarioDiario); 
+            //Con un foreach recorremos el array mostrando posición y valor
+            foreach($aCarrera1 as $pos => $valor){ 
+                echo $pos . " => " . $valor;
+                echo "<br>";
             }
-            
-            echo "<h3>Salario total = " . $acumulador . "€</h3>";
-            
-
-
-
-
-/*$aCarrera[fecha][dorsal][nombre, apellidos] => valor;
-$aCarrera[fecha][dorsal][marca] => valor;*/
         ?>
     </body>
 </html>
