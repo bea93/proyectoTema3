@@ -22,10 +22,11 @@
             
 
             //Muestra los datos recogidos
-            echo "Nombre: " . $nombre . "<br>"; 
-            echo "Dirección: " . $direccion . "<br>"; 
-            echo "Fecha de nacimiento: " . $fecha->format('d-m-Y') . "<br>"; 
-            echo "¿Es feliz? " . $feliz . "<br>";
+            echo "<strong>Nombre:</strong> " . $nombre . "<br>"; 
+            echo "<strong>Dirección:</strong> " . $direccion . "<br>";
+            echo "<strong>Código Postal:</strong> " . $codigo . "<br>";
+            echo "<strong>Fecha de nacimiento:</strong> " . $fecha->format('d-m-Y') . "<br>"; 
+            echo "<strong>¿Es feliz?</strong> " . $feliz . "<br>";
         ?>
         <input type="button" value="Volver" onclick="location='../indexProyectoTema3.html'">
     </body>

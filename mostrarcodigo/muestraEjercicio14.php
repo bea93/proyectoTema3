@@ -11,7 +11,7 @@
 	<body>
 		
 		<?php
-			highlight_file("../doc/210322ValidacionFormularios.php");
+			highlight_file("../core/210322ValidacionFormularios.php");
 		?>
 	</body>
 </html>

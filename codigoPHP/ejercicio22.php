@@ -12,7 +12,7 @@
             */
 
             
-            if (isset($_POST['submit'])) {//Código que se ejecuta cuando se envía el formulario
+            if (isset($_POST['enviar'])) {//Código que se ejecuta cuando se envía el formulario
 
                 //Variables que almacenan los datos
                 $nombre = $_POST['nombre']; 
@@ -22,13 +22,15 @@
                 $feliz= $_POST['feliz'];
 
                 //Muestra los datos recogidos
-                echo "Nombre: " . $nombre . "<br>"; 
-                echo "Dirección: " . $direccion . "<br>"; 
-                echo "Fecha de nacimiento: " . $fecha->format('d-m-Y') . "<br>"; 
-                echo "¿Es feliz? " . $feliz . "<br>";
+                echo "<strong>Nombre:</strong> " . $nombre . "<br>"; 
+                echo "<strong>Dirección:</strong> " . $direccion . "<br>";
+                echo "<strong>Código Postal:</strong> " . $codigo . "<br>";
+                echo "<strong>Fecha de nacimiento:</strong> " . $fecha->format('d-m-Y') . "<br>"; 
+                echo "<strong>¿Es feliz?</strong> " . $feliz . "<br>";
+                
             } else { //Código que se ejecuta antes de rellenar el formulario
                 ?>
-                <form name="formulario2" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                <form name="formulario2" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                     <fieldset>
                         <legend>Formulario 2</legend>
                         <div>
@@ -57,7 +59,7 @@
                             <label for="RB3">A veces</label><br>
                         </div>
                         <div>
-                            <br><input type="submit" value="Enviar">
+                            <br><input id="enviar" type="submit" value="Enviar" name="enviar">
                         </div>
                     </fieldset>
                 </form>
