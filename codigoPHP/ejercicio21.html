@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 21</title>
+    </head>
+    
+    <!--
+        @author: Bea Merino Macía
+        @since: 08/10/2020
+        @description: Construir un formulario para recoger un cuestionario realizado a una persona y 
+                       enviarlo a una página Tratamiento.php, para que muestre las preguntas y 
+                       las respuestas recogidas
+    
+    -->
+
+    <body>
+        <form action="tratamiento.php" method="post">
+            <fieldset>
+                <legend>Formulario 1</legend>
+                <div>
+                    Nombre: 
+                    <input type="text" name="nombre" placeholder="Introduzca su nombre"><br><br>
+                </div>
+                <div>
+                    Dirección: 
+                    <input type="text" name="direccion" placeholder="Introduzca su dirección"><br><br>
+                </div>
+                <div>
+                    Código Postal: 
+                    <input type="text" name="codigo" placeholder="Introduzca código postal"><br><br>
+                </div>
+                <div>
+                    Fecha de nacimiento: 
+                    <input type="date" name="fecha"><br><br>
+                </div>
+                <div>
+                    ¿Es feliz?<br>
+                    <input type="radio" id="RB1" name="feliz" value="si">
+                    <label for="RB1">Sí</label><br>
+                    <input type="radio" id="RB2" name="feliz" value="no">
+                    <label for="RB2">No</label><br>
+                    <input type="radio" id="RB3" name="feliz" value="A veces">
+                    <label for="RB3">A veces</label><br>
+                </div>
+                <div>
+                    <br><input id="enviar" type="submit" value="Enviar" name="enviar">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
