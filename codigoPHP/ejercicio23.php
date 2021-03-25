@@ -106,35 +106,37 @@
                         <label for='nombre'>Nombre:</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre: ">
                         <?php if ($aErrores['nombre'] != NULL) { ?>
-                            <div>
-                                <?php echo $aErrores['nombre']; //Mensaje de error que tiene el array aErrores    ?>
-                            </div>   
+                                <div class="error">
+                                    <?php echo $aErrores['nombre']; ?>
+                                </div>   
                         <?php } ?>                  
                     </div>   
                     <div class="group">
                         <label for='direccion'>Dirección:</label>
                         <input type="text" name="direccion" id="direccion" placeholder="Introduzca su dirección: " class="obligatorio"> 
                         <?php if ($aErrores['direccion'] != NULL) { ?>
-                            <div>
-                                <?php echo $aErrores['direccion']; //Mensaje de error que tiene el array aErrores?>
-                            </div>   
-                        <?php } ?>
+                                <div class="error">
+                                    <?php echo $aErrores['direccion']; ?>
+                                </div>   
+                        <?php } ?> 
                     </div>
                     <div class="group">
                         <label for='codigo'>Código:</label>
                         <input type="text" name="codigo" id="codigo" placeholder="Introduzca código postal: " class="obligatorio"> 
                         <?php if ($aErrores['codigo'] != NULL) { ?>
-                            <div>
-                                <?php echo $aErrores['codigo']; //Mensaje de error que tiene el array aErrores?>
-                            </div>   
-                        <?php } ?>
+                                <div class="error">
+                                    <?php echo $aErrores['codigo']; ?>
+                                </div>   
+                        <?php } ?> 
                     </div> 
                     <div class="group">
                             <label>Fecha de nacimiento: </label>
                             <input type="date" name="fecha"  class="obligatorio"><br>
-                            <?php if ($aErrores ['fecha'] != NULL) {
-                                    echo $aErrores['fecha'];
-                            }?>
+                            <?php if ($aErrores['fecha'] != NULL) { ?>
+                                    <div class="error">
+                                        <?php echo $aErrores['fecha']; ?>
+                                    </div>   
+                            <?php } ?> 
                     </div>
                     <div class="group">
                             <label>¿Eres feliz? </label><br>
@@ -144,10 +146,11 @@
                             <label for="RB2">No</label><br>
                             <input type="radio" id="RB3" name="feliz" value="A veces">
                             <label for="RB3">A veces</label><br>
-                            <?php
-                                if ($aErrores['feliz'] != NULL) {
-                                    echo $aErrores['feliz'];
-                            }?> 
+                            <?php if ($aErrores['feliz'] != NULL) { ?>
+                                <div class="error">
+                                    <?php echo $aErrores['feliz']; ?>
+                                </div>   
+                            <?php } ?> 
                         </div><br>
                     <input id="enviar" type="submit" value="Enviar" name="enviar">
                 </fieldset>    

@@ -5,13 +5,13 @@
         <meta name="author" content="Bea Merino Macía">
         <meta name="application-name" content="Sitio web">
 
-        <title>Ejercicio 23</title>
+        <title>Ejercicio 25</title>
     </head>
 	
 	<body>
 		
 		<?php
-			highlight_file("../codigoPHP/ejercicio23.php");
+			highlight_file("../codigoPHP/ejercicio25.php");
 		?>
 	</body>
 </html>

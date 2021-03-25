@@ -112,17 +112,21 @@
                                 <label>Nombre: </label>
                                 <input type="text" name="nombre" class="obligatorio" placeholder="Introduzca su nombre"
                                        value="<?php if($aErrores['nombre'] == NULL && isset($_POST['nombre'])){ echo $_POST['nombre'];} ?>"><br>
-                                <?php if ($aErrores ['nombre'] != NULL) {
-                                        echo $aErrores['nombre'];
-                                }?>
+                                <?php if ($aErrores['nombre'] != NULL) { ?>
+                                        <div class="error">
+                                        <?php echo $aErrores['nombre']; ?>
+                                        </div>   
+                                <?php } ?> 
                             </div>
                             <div class="group">
                                 <label>Dirección: </label>
                                 <input type="text" name="direccion" class="obligatorio" placeholder="Introduzca su dirección"
                                        value="<?php if($aErrores['direccion'] == NULL && isset($_POST['direccion'])){ echo $_POST['direccion'];} ?>"><br>
-                                <?php if ($aErrores ['direccion'] != NULL) {
-                                        echo $aErrores['direccion'];
-                                }?>
+                                <?php if ($aErrores['direccion'] != NULL) { ?>
+                                        <div class="error">
+                                        <?php echo $aErrores['direccion']; ?>
+                                        </div>   
+                                <?php } ?> 
                             </div>
                             <div class="group">
                                     <label>Código Postal</label>
@@ -140,9 +144,11 @@
                                        value="<?php if (isset($_POST['fecha']) && is_null($aErrores['fecha'])) {
                                                         echo $_POST['fecha'];
                                                }?>"><br>
-                                <?php if ($aErrores ['fecha'] != NULL) {
-                                        echo $aErrores['fecha'];
-                                }?>
+                                <?php if ($aErrores['fecha'] != NULL) { ?>
+                                        <div class="error">
+                                        <?php echo $aErrores['fecha']; ?>
+                                        </div>   
+                                <?php } ?> 
                             </div>
                             <div class="group">
                                 <label>¿Eres feliz? </label><br>
@@ -161,9 +167,11 @@
                                                                 echo 'checked';
                                                         }?>>
                                 <label for="RB3">A veces</label><br>
-                                <?php if ($aErrores['feliz'] != NULL) {
-                                        echo $aErrores['feliz'];
-                                }?> 
+                                <?php if ($aErrores['feliz'] != NULL) { ?>
+                                        <div class="error">
+                                        <?php echo $aErrores['feliz']; ?>
+                                        </div>   
+                                <?php } ?>  
                             </div>
                             <input class="group" id="enviar" type="submit" value="Enviar" name="enviar">
                         </fieldset>
